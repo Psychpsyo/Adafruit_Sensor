@@ -178,7 +178,7 @@ typedef struct {
 } sensors_event_t;
 
 /* Sensor details (40 bytes) */
-/** struct sensor_s is used to describe basic information about a specific
+/** struct sensor_info_t is used to describe basic information about a specific
  * sensor. */
 typedef struct {
   char name[12];     /**< sensor name */
@@ -191,7 +191,7 @@ typedef struct {
                        sensor */
   int32_t min_delay; /**< min delay in microseconds between events. zero = not a
                         constant rate */
-} sensor_t;
+} sensor_info_t;
 
 /** @brief Common sensor interface to unify various sensors.
  * Intentionally modeled after sensors.h in the Android API:
